@@ -20,11 +20,14 @@ const userSchema = new Schema(
             type: String,
             required: [true, 'Password is required'],
         },
-        age: {
+        donationType: {
+            type: String,
+            required: [true, 'DonationType is required'],
+        },
+        quantity: {
             type: Number,
+            required: [true, 'Quantity is required'],
         }
-
-
     },
     {
         timestamps: true
